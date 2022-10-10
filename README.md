@@ -1,7 +1,7 @@
 # Three in a row game
 A vanilla JS project inspired by three-in-a-row games (e.g. Candy Crush)
 
-Check the [demo on netlify.com]()
+Check the [demo on netlify.com](https://stunning-gumdrop-cd35a5.netlify.app)
 
 ### To-do:
 - Fix empty first row
