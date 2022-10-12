@@ -1,25 +1,26 @@
 body {
   background-image: url(/background.jpg);
+  background-position: center;
   color: #fff;
   height: 100vh;
   margin: 0;
   padding: 0;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
 }
 
 .score-board {
-  padding: 20px;
+  margin: 10px;
+  padding: 5px 15px;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(30, 55, 25, 0.5) inset, 0 1px 0 #fff;
-  background-color: rgba(57, 80, 57, 0.7);
+  background-color: rgba(74, 105, 74, 0.7);
   min-width: 150px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .grid {
@@ -27,8 +28,6 @@ body {
   width: 560px;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 80px;
-  margin-top: 50px;
   background-color: rgba(221, 232, 221, 0.9);
   padding: 10px;
   border-radius: 10px;
