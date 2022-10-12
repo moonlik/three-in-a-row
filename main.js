@@ -1,7 +1,4 @@
 import './style.css'
-// import javascriptLogo from './javascript.svg'
-// import { setupCounter } from './counter.js'
-// <a href="https://www.freepik.com/free-vector/animal-logo-element-vector-line-art-animal-illustration-set_20775645.htm#page=5&query=cat&position=22&from_view=keyword">Image by rawpixel.com</a> on Freepik
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -50,26 +47,20 @@ document.addEventListener('DOMContentLoaded', () => {
   function dragStart() {
     colorBeingDragged = this.style.backgroundImage
     squareIdBeingDragged = parseInt(this.id)
-    console.log(colorBeingDragged)
-    console.log(this.id, 'dragstart')
   }
 
   function dragOver(e) {
     e.preventDefault()
-    console.log(this.id, 'dragover')
   }
 
   function dragEnter(e) {
     e.preventDefault()
-    console.log(this.id, 'dragenter')
   }
 
   function dragLeave() {
-    console.log(this.id, 'dragleave')
   }
 
   function dragDrop() {
-    console.log(this.id, 'dragdrop')
     colorBeingReplaced = this.style.backgroundImage
     squareIdBeingReplaced = parseInt(this.id)
     this.style.backgroundImage = colorBeingDragged
@@ -77,8 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function dragEnd() {
-    console.log(this.id, 'dragend')
-
     let validMoves = [
       squareIdBeingDragged - 1,
       squareIdBeingDragged - width,
@@ -104,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const firstRow = [0, 1, 2, 3, 4, 5, 6, 7]
         const isFirstRow = firstRow.includes(i)
 
-        if (isFirstRow && squares[i].style.backgroundImage === '') {
+        if (isFirstRow && (squares[i].style.backgroundImage === '')) {
           let randomColor = Math.floor(Math.random() * squareColors.length)
           squares[i].style.backgroundImage = squareColors[randomColor]
         }
